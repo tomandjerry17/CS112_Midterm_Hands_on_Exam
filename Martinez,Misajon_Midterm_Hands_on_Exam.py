@@ -1,4 +1,5 @@
 import random
+
 # Random Numbers for Addition
 addend1 = random.randint(1, 99)
 addend2 = random.randint(1, 99)
@@ -55,11 +56,11 @@ print()
 
 # Random Numbers for Division
 dividend = random.randint(1, 99)
-divisor = random.randint(1, 99)
+divisor = random.randint(1, 9)  # limiting divisor to 1-9 for whole number quotient
 
 # Display of Questions
 print("What is", dividend, "/", divisor, "?")
-quotient = int(input(">> "))
+quotient = float(input(">> "))  # to accept decimal answer
 print(dividend, "/", divisor, "=", quotient)
 
 # Conditional Statement
